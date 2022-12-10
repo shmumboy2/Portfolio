@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(55, 53, 53);
+    overflow: hidden;
+}
+html {
+    margin: -10px;
+}
+header {
+    background-color: rgb(197, 66, 66);
+    height: 20px;
+    padding: 10px;
+}
