@@ -1,12 +1,46 @@
+
+
 body {
-    background-color: rgb(55, 53, 53);
-    overflow: hidden;
+    background-color: rgb(255, 248, 248);
+    height: 2000px;
+
 }
 html {
     margin: -10px;
+    overflow-x: hidden;
 }
 header {
     background-color: rgb(197, 66, 66);
-    height: 20px;
-    padding: 10px;
+    height: 45px;
+    display:flex;
+    position:fixed;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+label{
+    color:rgb(255, 248, 248);
+    font-size: 30px;
+}
+a {
+    color: rgb(255, 248, 248);
+    text-decoration: none;
+    margin-left: 80px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+a:hover {
+    color: black;
+}
+#nav{
+    background-color: rgb(73, 70, 70);
+    width: 15%;
+    height: 100%;
+}
+#about{
+    padding-left: 72px;
+}
+#name {
+    padding-left: 59px;
 }
