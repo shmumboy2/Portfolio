@@ -1,13 +1,12 @@
 
-
 body {
     background-color: rgb(255, 248, 248);
     height: 2000px;
-
 }
 html {
     margin: -10px;
     overflow-x: hidden;
+    scroll-behavior: disable;
 }
 header {
     background-color: rgb(197, 66, 66);
@@ -15,13 +14,31 @@ header {
     display:flex;
     position:fixed;
     width: 100%;
+    justify-content: center;
+    margin-bottom: -5px;
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(1, 100%);
+    margin-bottom: 10px;
+}
+#left{
+    background-color: rgba(193, 118, 118, 0.725);
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+#title {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 h1 {
     text-align: center;
 }
-label{
-    color:rgb(255, 248, 248);
-    font-size: 30px;
+#move {
+    margin-left: 0px;
 }
 a {
     color: rgb(255, 248, 248);
@@ -33,14 +50,6 @@ a {
 a:hover {
     color: black;
 }
-#nav{
-    background-color: rgb(73, 70, 70);
-    width: 15%;
-    height: 100%;
-}
-#about{
-    padding-left: 72px;
-}
 #name {
-    padding-left: 59px;
+    margin-left: 900px;
 }
