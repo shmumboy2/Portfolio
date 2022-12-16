@@ -1,55 +1,195 @@
 
 body {
-    background-color: rgb(255, 248, 248);
-    height: 2000px;
+    background-color: whitesmoke;
+
 }
 html {
     margin: -10px;
+    margin-bottom: -10px;
     overflow-x: hidden;
-    scroll-behavior: disable;
 }
 header {
-    background-color: rgb(197, 66, 66);
+    background-color: lightgrey;
     height: 45px;
     display:flex;
     position:fixed;
-    width: 100%;
+    width: 102%;
     justify-content: center;
-    margin-bottom: -5px;
+    border-bottom: 3px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: grey;
+}
+footer {
+    background-color: lightgray;
+    height: 100%;
+    width: 102%;
+    display: flex;
+    border-bottom: 0px;
+    border-top: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: grey;
+    grid-column: 1/4;
+    grid-row:4/5;
+}
+label {
+    font-size: 24px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    margin-left: 70px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+h1 {
+    text-align: center;
+    color: black;
 }
 .container{
     display: grid;
     height: 100%;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: repeat(1, 100%);
-    margin-bottom: 10px;
+    grid-template-rows: 20% 80% 60% 20%;
+    margin-top: -10px;
 }
-#left{
-    background-color: rgba(193, 118, 118, 0.725);
+#whoText {
     grid-row: 1/2;
-    height: 100%;
-    width: 100%;
+    grid-column:2/4;
+    margin: 40px;
+    font-size: 26px;
+}
+#who {
+    grid-row: 1/2;
+    grid-column: 2/4;
+    text-decoration: underline;
+    font-size: 30px;
+    margin: -5px;
+}
+#what{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    font-size: 30px;
+    margin: -5px;
+    text-decoration: underline;
+}
+#whatText{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    font-size: 26px;
+    margin: 40px;
 }
 #title {
     grid-column: 2/3;
     grid-row: 1/2;
+    
 }
-h1 {
-    text-align: center;
+#aboutMe {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 50% 50%;
+    
+}
+#skills {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+        border-bottom: 0px;
+        border-top: 3px;
+        border-left: 0px;
+        border-right: 0px;
+        border-style: solid;
+        border-color: black;
+    grid-template-rows: 10% 30% 20% 20% 20%;
+    grid-template-columns: 15% 70% 15%;
+}
+#skill {
+    grid-column: 2/3;
+    margin-left: -20px;
+}
+#HTMLlabel{
+    grid-row:3/4;
+}
+#CSSlabel {
+    grid-row: 4/5;
+}
+#JSlabel {
+    grid-row: 5/6;
+}
+#HTML{
+    grid-row: 3/4;
+    height: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    background-color: gold;
+}
+#CSS{
+    grid-row: 4/5;
+    height: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    background-color: gold;
+}
+#JS{
+    grid-row:5/6;
+    height: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: gold;
+}
+#cap{
+    grid-column: 2/3;
+    height: 24px;
+    width: 100%;
+    background-color:rgb(218, 193, 132);
+}
+#HTMLp{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-left: 10px;
+}
+#CSSp {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin-left: 10px;
+}
+#JSp {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    margin-left: 10px;
+}
+#what2{
+    font-size: 24px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 10px;
+}
+#me{
+    height: 370px;
+    width: auto;
+    margin: 0px;
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 #move {
-    margin-left: 0px;
+    margin-left: -65px;
 }
-a {
-    color: rgb(255, 248, 248);
-    text-decoration: none;
-    margin-left: 80px;
-    font-size: 20px;
-    padding-top: 10px;
-}
-a:hover {
-    color: black;
+.onPage{
+    text-decoration: underline;
 }
 #name {
     margin-left: 900px;
+}
+a:hover {
+    color: whitesmoke;
 }
