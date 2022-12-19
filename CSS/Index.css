@@ -63,13 +63,25 @@ h1 {
     display: grid;
     height: 100%;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 30% 160% ;
+    grid-template-rows: 30% 160% 1% 15%;
+}
+.resumeg{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 160% ;
+    justify-items: center;
+}
+#resume{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 100px;
 }
 #whoText {
     grid-row: 1/2;
     grid-column:2/4;
     margin: 40px;
-    font-size: 26px;
+    font-size: 30px;
 }
 #who {
     grid-row: 1/2;
@@ -88,7 +100,7 @@ h1 {
 #whatText{
     grid-row: 2/3;
     grid-column: 1/4;
-    font-size: 26px;
+    font-size: 30px;
     margin: 40px;
 }
 #title {
@@ -138,7 +150,7 @@ h1 {
     height: 24px;
     width: 100%;
     display: grid;
-    grid-template-columns: 95% 5%;
+    grid-template-columns: 60% 40%;
     background-color: gold;
 }
 #CSS{
